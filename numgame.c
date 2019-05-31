@@ -8,21 +8,31 @@ int main()
 // generate a random number
 
     //Wanna get MilliSec to make better randomnumber
-    int num=30;
+    int num = 30;
     printf("Guess the number from 0 to 99.\n");
-// start the game
-    int ans,i;
+    printf("The answer is %d.\n",num);
+    // start the game
+    int ans=0;
 // start main rutine
-    for(i;num =! ans;num){
+    for(int num;num=!ans;num+0)
+    {
         printf("Enter your answer.\n");
         scanf("%d",&ans);
         printf("You enterd %d.\n",ans);
         
-        if (ans > num) {
-            printf("Too huge.\n");
-        } else {
-            printf("Too small.\n");
-        };
-        printf("The answer is %d.",num);
-    }
+        if (ans == num)
+        {
+            printf("Collect!!\n");
+            break;
+        }
+        else if (ans > num)
+            {
+                printf("Too huge.\n");
+            }
+            else
+            {
+                printf("Too small.\n");
+            };
+    printf("The answer is %d.\n",num);
+    };
 }
