@@ -14,7 +14,7 @@ int main()
     // start the game
     int ans=0;
 // start main rutine
-    for(int num;num=!ans;num+0)
+    while(1)
     {
         printf("Enter your answer.\n");
         scanf("%d",&ans);
@@ -35,4 +35,4 @@ int main()
             };
     printf("The answer is %d.\n",num);
     };
-}
+};
