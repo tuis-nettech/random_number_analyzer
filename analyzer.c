@@ -43,8 +43,8 @@ int main()
                 ans = ((guessmax + guessmin)/2);
             };
         printf("My answer is %d.\n",ans);
-        printf("My guessmin is %d.\n",guessmin);
-        printf("My guessmax is %d.\n",guessmax);
+//        printf("My guessmin is %d.\n",guessmin);
+//        printf("My guessmax is %d.\n",guessmax);
         lasttry=ans;
     };
 };
