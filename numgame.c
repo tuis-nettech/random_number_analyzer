@@ -2,15 +2,17 @@
 #include <stdlib.h>
 #include <sys/time.h>
 
+
 int main()
 {
     printf("--==num game==--\n\n");
 // generate a random number
+    struct timeval tv;
+    gettimeofday(&tv, NULL);
+    srand((unsigned int)tv.tv_usec);
 
-    //Wanna get MilliSec to make better randomnumber
-    int num = 30;
+    int num = rand()%100;
     printf("Guess the number from 0 to 99.\n");
-    printf("The answer is %d.\n",num);
     // start the game
     int ans=0;
 // start main rutine
@@ -27,12 +29,11 @@ int main()
         }
         else if (ans > num)
             {
-                printf("Too huge.\n");
+                printf("Too huge.\n\n");
             }
             else
             {
-                printf("Too small.\n");
+                printf("Too small.\n\n");
             };
-    printf("The answer is %d.\n",num);
     };
 };
